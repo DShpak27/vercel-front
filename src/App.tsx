@@ -50,7 +50,7 @@ function App() {
           onClick={() => {
             axios
               .get(
-                'https://vercel-back-na21jhspw-dshpak27s-projects.vercel.app/set-cookie'
+                'https://vercel-back-39itbu1nm-dshpak27s-projects.vercel.app/set-cookie'
               )
               .then(response => {
                 setInfo(response.data);
@@ -63,7 +63,7 @@ function App() {
           onClick={() => {
             axios
               .get(
-                'https://vercel-back-na21jhspw-dshpak27s-projects.vercel.app/get-cookie'
+                'https://vercel-back-39itbu1nm-dshpak27s-projects.vercel.app/get-cookie'
               )
               .then(response => {
                 setInfo(response.data);
