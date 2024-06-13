@@ -49,7 +49,9 @@ function App() {
         <Button1
           onClick={() => {
             axios
-              .get('https://vercel-back-ebon.vercel.app/set-cookie')
+              .get('https://vercel-back-ebon.vercel.app/set-cookie', {
+                withCredentials: true,
+              })
               .then(response => {
                 setInfo(response.data);
               });
@@ -60,7 +62,9 @@ function App() {
         <Button2
           onClick={() => {
             axios
-              .get('https://vercel-back-ebon.vercel.app/get-cookie')
+              .get('https://vercel-back-ebon.vercel.app/get-cookie', {
+                withCredentials: true,
+              })
               .then(response => {
                 setInfo(response.data);
               });
