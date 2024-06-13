@@ -49,9 +49,7 @@ function App() {
         <Button1
           onClick={() => {
             axios
-              .get(
-                'https://vercel-back-39itbu1nm-dshpak27s-projects.vercel.app/set-cookie'
-              )
+              .get('https://vercel-back-ebon.vercel.app/set-cookie')
               .then(response => {
                 setInfo(response.data);
               });
@@ -62,9 +60,7 @@ function App() {
         <Button2
           onClick={() => {
             axios
-              .get(
-                'https://vercel-back-39itbu1nm-dshpak27s-projects.vercel.app/get-cookie'
-              )
+              .get('https://vercel-back-ebon.vercel.app/get-cookie')
               .then(response => {
                 setInfo(response.data);
               });
